@@ -1,4 +1,4 @@
-module tb
+module github.com/dovydas1928/tb
 
 go 1.22.1
 
