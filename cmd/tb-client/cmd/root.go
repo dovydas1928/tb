@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"tb"
+	"github.com/dovydas1928/tb"
 	helper "github.com/dovydas1928/tb/cmd"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
@@ -69,5 +69,5 @@ func initConfig() {
 
 	viper.AutomaticEnv()
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
-	viper.SetEnvPrefix("tb")
+	viper.SetEnvPrefix("github.com/dovydas1928/tb")
 }

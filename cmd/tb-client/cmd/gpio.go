@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"tb"
+	"github.com/dovydas1928/tb"
 	helper "github.com/dovydas1928/tb/cmd"
 	"github.com/spf13/cobra"
 )
