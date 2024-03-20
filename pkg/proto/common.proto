@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package common;
+
+option go_package = "github.com/dovydas1928/tb/pkg/proto/common";
+
+message Void {}
+
+message ResponseVersion {
+  string revision = 1;
+  string version = 2;
+}
+
+message RequestModprobe {
+  string module = 1;
+}
+
+service Common {
+  rpc GetVersion (Void) returns (ResponseVersion) {};
+  rpc Modprobe (RequestModprobe) returns (Void) {};
+}
